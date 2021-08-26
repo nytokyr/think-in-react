@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SearchBar from '../SearchBar/SearchBar'
 import ProductTable from '../ProductTable/ProductTable'
+import { Card } from 'react-bootstrap';
 
 class FilterableProductTable extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class FilterableProductTable extends Component {
 
     render() {
         return (
-            <div>
+            <Card>
                 <SearchBar
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
@@ -36,7 +37,7 @@ class FilterableProductTable extends Component {
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}
                 />
-            </div>
+            </Card>
         )
     }
 }

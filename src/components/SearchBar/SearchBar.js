@@ -16,13 +16,23 @@ class SearchBar extends Component {
     }
 
     render() {
-
         return (
             <form>
-                <input type="text" placeholder="Search..." value={this.props.filterText} onChange={this.handleFilterTextChange} />
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Search..."
+                    value={this.props.filterText}
+                    onChange={this.handleFilterTextChange}
+                />
                 <p>
-                    <input type="checkbox" checked={this.props.inStockOnly}  onChange={this.handleInStockChange}/> Only show
-                    products in stock
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        checked={this.props.inStockOnly}
+                        onChange={this.handleInStockChange}
+                    />
+                    Only show products in stock
                 </p>
             </form>
         )
