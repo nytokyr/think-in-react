@@ -1,8 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import FilterableProductTable from './components/FilterableProductTable/FilterableProductTable'
+import ConfirmDialogDemo from './components/ConfirmDialogDemo/ConfirmDialogDemo'
 import React from 'react'
-
 function App() {
     const PRODUCTS = [
         {
@@ -43,11 +43,14 @@ function App() {
         },
     ]
 
+ 
+
     return (
         <div className="App">
             <div id="filterableProductTable">
                 <FilterableProductTable products={PRODUCTS} />
             </div>
+            <ConfirmDialogDemo></ConfirmDialogDemo>
         </div>
     )
 }

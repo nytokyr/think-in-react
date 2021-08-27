@@ -11,7 +11,8 @@
 # production
 /build
 /wwwroot
-
+/public
+/storybook-static
 # misc
 .DS_Store
 .env.local
