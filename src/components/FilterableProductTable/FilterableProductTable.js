@@ -3,6 +3,7 @@ import { Card } from 'react-bootstrap';
 import SearchBar from '../SearchBar/SearchBar';
 import ProductTable from '../ProductTable/ProductTable';
 
+
 class FilterableProductTable extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +24,7 @@ class FilterableProductTable extends Component {
     });
   }
 
+
   render() {
     return (
       <Card>
@@ -40,6 +42,7 @@ class FilterableProductTable extends Component {
       </Card>
     );
   }
+
 }
 
 export default FilterableProductTable;
