@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import { ConfirmDialog } from '../ConfirmDialog'
+import { ConfirmDialog } from '../ConfirmDialog';
 
 export default {
-    component: ConfirmDialog,
-    title: 'Components/ConfirmDialog',
-}
+  component: ConfirmDialog,
+  title: 'Components/ConfirmDialog',
+};
 
-export const Primary = () => <ConfirmDialog />
+export const Primary = () => <ConfirmDialog />;
